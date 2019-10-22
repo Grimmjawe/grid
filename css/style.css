@@ -1,0 +1,37 @@
+:root{
+    --yellow: #ffc422;
+    --orange: #dd580b;
+    --black: #2c1919;
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: var(--black);
+}
+body{
+    background: linear-gradient(to right, var(--orange), var(--black));
+    margin: 20px;
+}
+.top{
+    display: grid;
+    grid-template-areas:
+    "party party cta1"
+    "party party cta2";
+    gap: 60px;
+}
+.party{
+    grid-area: party;
+    min-height: 450px;
+    background-image: url("../img/logo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cta1{
+    grid-area: cta1;
+}
+.cta2{
+    grid-area: cta2;
+}
